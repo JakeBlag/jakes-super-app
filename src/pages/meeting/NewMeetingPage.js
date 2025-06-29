@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate, Link, useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import './MeetingForm.css'; // Import the new styles
 import { FaUsers, FaClipboardList, FaInfoCircle } from 'react-icons/fa';
 

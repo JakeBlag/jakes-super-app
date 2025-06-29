@@ -1,14 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import styles from './MeetingDetailPage.module.css';
-import { FaCalendarAlt, FaMapMarkerAlt, FaUser, FaUsers, FaPrayingHands, FaEdit, FaTrash, FaChevronLeft, FaRegImage } from 'react-icons/fa';
+import { FaCalendarAlt, FaMapMarkerAlt, FaUser, FaUsers, FaPrayingHands, FaChevronLeft } from 'react-icons/fa';
 import jsPDF from 'jspdf';
 import html2canvas from 'html2canvas';
-
-function Badge({ children, type }) {
-  const typeClass = type ? styles['badge'] + ' ' + styles[type.toLowerCase().replace(/\s/g, '')] : styles['badge'];
-  return <span className={typeClass}>{children}</span>;
-}
 
 function DeleteMeetingModal({ onConfirm, onCancel }) {
   return (

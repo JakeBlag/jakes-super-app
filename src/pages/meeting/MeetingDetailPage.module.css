@@ -1,0 +1,237 @@
+.metaCard {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  padding: 24px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 40px;
+  align-items: flex-start;
+}
+.summary {
+  background: #f4f7fa;
+  border-radius: 8px;
+  padding: 16px 24px;
+  margin-bottom: 18px;
+  font-size: 1.05em;
+  font-weight: 500;
+  color: #2d6ca2;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.agendaCard {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  padding: 12px 24px;
+  margin-bottom: 20px;
+}
+.agendaTitle {
+  font-size: 1.25em;
+  font-weight: 700;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.badge {
+  display: inline-block;
+  border-radius: 12px;
+  padding: 2px 12px;
+  font-size: 0.95em;
+  font-weight: 600;
+  margin-right: 8px;
+  color: #fff;
+}
+.badge.low { background: #495057; }
+.badge.medium { background: #e67e22; }
+.badge.high { background: #d9534f; }
+.badge.new { background: #0056b3; }
+.badge.inprogress { background: #b9770e; }
+.badge.complete { background: #218838; }
+.badge.overdue { background: #d9534f; }
+.attachments {
+  display: flex;
+  gap: 16px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+.thumbnail {
+  max-height: 120px;
+  max-width: 180px;
+  border-radius: 6px;
+  border: 1.5px solid #bbb;
+  background: #fafbfc;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+.thumbnail:hover {
+  box-shadow: 0 2px 12px rgba(0,0,0,0.13);
+}
+.modalBackdrop {
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.7);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modalContent {
+  background: #fff;
+  border-radius: 10px;
+  padding: 32px 24px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+.topRight {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  z-index: 10;
+}
+.iconBtn {
+  background: none;
+  border: none;
+  color: #005a9e;
+  font-size: 1.3em;
+  margin-left: 8px;
+  cursor: pointer;
+  position: relative;
+}
+.iconBtn:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #222;
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-size: 0.45em;
+  white-space: nowrap;
+  z-index: 100;
+}
+.subheading {
+  margin-left: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.actionRow {
+  margin-left: 18px;
+  margin-bottom: 8px;
+  padding: 8px 0;
+  border-bottom: 1.5px solid #b0b0b0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.mb4 { margin-bottom: 1.5rem; }
+.metaRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  align-items: center;
+  margin-bottom: 2px;
+}
+.metaItem {
+  display: flex;
+  align-items: center;
+  font-size: 0.98em;
+  gap: 4px;
+}
+.badgePill {
+  display: inline-block;
+  border-radius: 9999px;
+  padding: 2px 10px;
+  font-size: 0.95em;
+  font-weight: 600;
+  margin-right: 8px;
+  color: #fff;
+  vertical-align: baseline;
+}
+.thumbnailSm {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1.5px solid #bbb;
+  background: #fafbfc;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-bottom: 6px;
+  transition: box-shadow 0.2s;
+}
+.thumbnailSm:hover {
+  box-shadow: 0 2px 12px rgba(0,0,0,0.13);
+}
+.iconBtnRight {
+  background: none;
+  border: none;
+  color: #005a9e;
+  font-size: 1.3em;
+  margin-left: 8px;
+  cursor: pointer;
+  position: relative;
+  float: right;
+}
+.fileName {
+  font-size: 0.92em;
+  color: #555;
+  margin-left: 6px;
+}
+.tooltip {
+  position: absolute;
+  top: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #222;
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-size: 0.45em;
+  white-space: nowrap;
+  z-index: 100;
+}
+.badge, .badgePill {
+  vertical-align: baseline;
+}
+.iconBtnRight:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #222;
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-size: 0.45em;
+  white-space: nowrap;
+  z-index: 100;
+}
+@media (max-width: 700px) {
+  .metaCard, .agendaCard, .modalContent {
+    padding: 12px 6px;
+  }
+  .summary {
+    padding: 10px 6px;
+    font-size: 0.98em;
+  }
+  .agendaTitle {
+    font-size: 1em;
+  }
+  .attachments {
+    gap: 8px;
+  }
+  .thumbnail {
+    max-height: 80px;
+    max-width: 120px;
+  }
+} 

@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/jakes-super-app/static/css/main.7dd4171f.css",
+    "main.js": "/jakes-super-app/static/js/main.9efaf82e.js",
+    "static/js/977.3b1ffb7a.chunk.js": "/jakes-super-app/static/js/977.3b1ffb7a.chunk.js",
+    "static/js/455.629e68ad.chunk.js": "/jakes-super-app/static/js/455.629e68ad.chunk.js",
+    "static/js/453.10ee76cd.chunk.js": "/jakes-super-app/static/js/453.10ee76cd.chunk.js",
+    "index.html": "/jakes-super-app/index.html",
+    "main.7dd4171f.css.map": "/jakes-super-app/static/css/main.7dd4171f.css.map",
+    "main.9efaf82e.js.map": "/jakes-super-app/static/js/main.9efaf82e.js.map",
+    "977.3b1ffb7a.chunk.js.map": "/jakes-super-app/static/js/977.3b1ffb7a.chunk.js.map",
+    "455.629e68ad.chunk.js.map": "/jakes-super-app/static/js/455.629e68ad.chunk.js.map",
+    "453.10ee76cd.chunk.js.map": "/jakes-super-app/static/js/453.10ee76cd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7dd4171f.css",
+    "static/js/main.9efaf82e.js"
+  ]
+}
